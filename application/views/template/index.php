@@ -106,7 +106,7 @@
                     <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-file"></i> Pages</a>
                     <div class="dropdown-menu dropdown-menu-arrow">
                       <a href="<?=base_url()?>user/profile" class="dropdown-item ">Profile</a>
-                      <a href="<?=base_url()?>account/login" class="dropdown-item ">Login</a>
+                      <a href="<?=base_url()?>auth/login" class="dropdown-item ">Login</a>
                       <a href="<?=base_url()?>account/register" class="dropdown-item ">Register</a>
                       <a href="<?=base_url()?>account/forgot-password" class="dropdown-item ">Forgot password</a>
                     </div>

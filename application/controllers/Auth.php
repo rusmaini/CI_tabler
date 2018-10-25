@@ -24,7 +24,7 @@ class Auth extends MY_Controller {
 		
 		if ($this->form_validation->run() == FALSE):
 			$data['content']	= 'auth/login';
-			$this->load->view('template/index',$data);
+			$this->load->view('template/login',$data);
 		else:
 			$email 		= $this->input->post('email');
 			$password 	= $this->input->post('password');
@@ -88,7 +88,7 @@ class Auth extends MY_Controller {
 		endif;		
 		
 		$data['content'] 	= 'auth/sah';
-		$this->load->view('template/index',$data);
+		$this->load->view('template/login',$data);
 	}
 	
 	function lupa()
@@ -107,8 +107,8 @@ class Auth extends MY_Controller {
 											'required|valid_email');
 		
 		if ($this->form_validation->run() == FALSE):
-			$data['content']	= 'auth/lupa';
-			$this->load->view('template/index',$data);
+		$data['content']	= 'auth/lupa';
+		$this->load->view('template/login',$data);
 		else:
 			$email 		= $this->input->post('email');
 			$user 		= $this->Muser->get_where('email',$email);
