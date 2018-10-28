@@ -41,7 +41,7 @@ class Register extends MY_Controller {
 		if ($this->form_validation->run() == FALSE):
 		
 			$data['content']	= 'register/form';
-			$this->load->view('template/index',$data);
+			$this->load->view('template/login',$data);
 			
 		else:
 			//activation code
